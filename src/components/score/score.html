@@ -1,0 +1,33 @@
+<div class="contetodore">
+  <div class="itcoresul">
+    <p class="resuofi">{{ scoresMatch.local }}</p>
+    <div class="onequiresul">
+      <p class="paidesk">{{ teamsMatch.local.toUpperCase() }}</p>
+      <p class="paires">{{ teamsMatch.local.slice(0, 2).toUpperCase() }}</p>
+      <div class="bantore">
+        <img :src="flagMatch.local" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="sponcrono">
+    <!-- <div class="linea4"></div> -->
+    <!-- <div class="tumarca">
+      <img src="{{ STATIC_URL }}especial/img/heverlogo.png" alt=""> </div> -->
+    <p class="stadio">{{ stadiumMatch }}</p>
+    <div class="cronoresul">
+      <p class="horacrono">{{minuteCrono}}:{{secondCrono}}</p>
+    </div>
+    <p class="timefut">{{ statusMatch }}</p>
+    <p class="fechapar">{{ phaseMatch }}</p>
+  </div>
+  <div class="itcoresul">
+    <p class="resuofi">{{ scoresMatch.visit }}</p>
+    <div class="onequiresul">
+      <p class="paidesk">{{ teamsMatch.visit.toUpperCase() }}</p>
+      <p class="paires">{{ teamsMatch.visit.slice(0, 2).toUpperCase() }}</p>
+      <div class="bantore">
+        <img :src="flagMatch.visit" alt="">
+      </div>
+    </div>
+  </div>
+</div>
